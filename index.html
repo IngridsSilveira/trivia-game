@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangás</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Indie+Flower&family=Play&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imagens/Ncrow-Mega-Pack-2-Manga-Studio-FX-4.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/estilos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/estilos/css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand me-2" href="#">Trivia Game</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="https://ingridssilveira.github.io/IngridSouza/"
+                            target="_blank">Desenvolvedora</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid bg bg-body">
+        <section class="container section d-flex justify-content-center align-items-center mb-3">
+            <h1 class="navbar-brand mt-3 mb-3">Trivia Time</h1>
+
+            <div class="bg-light p-3 section d-flex align-items-center justify-content-center rounded-2">
+                <p class="pergunta text-center">Qual desses é uma cor vista em todos os cantos?</p>
+
+                <div class="inputs">
+                    <div class="d-flex">
+                        <input type="radio" name="radio" class="radio" id="0">
+                        <p class="resposta mb-1">Azul</p>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="radio" class="radio" id="1">
+                        <p class="resposta mb-1">Amarelo</p>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="radio" class="radio" id="2">
+                        <p class="resposta mb-1">Verde</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success mb-2 mt-3" id="enviar">Submit</button>
+                <p class="text-center correto" id="confirma"></p>
+
+                <div class="d-flex justify-content-end w-100"> 
+                    <button type="button" class="btn btn-warning" id="next">Next</button>
+                </div>
+            </div>
+        </section>
+        <footer id="rodape" class="footer container-fluid">
+            <div class="footer_copy">
+                <p class="mb-0 links">Desenvolvido por <a class="links" target="_blank"
+                        href="https://github.com/IngridsSilveira">Ingrid de Souza</a>
+                </p>
+            </div>
+            <div class="footer_area">
+                <a class="me-2" target="_blank" href="https://github.com/IngridsSilveira"><i
+                        class="bi bi-github"></i></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/ingridssilveira/"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

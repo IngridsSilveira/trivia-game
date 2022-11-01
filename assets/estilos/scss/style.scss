@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  .nav-link {
+    font-family: "Play", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+.navbar-brand {
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.bg {
+  height: 87vh;
+  width: 100%;
+}
+.section {
+  flex-direction: column;
+}
+.inputs {
+  width: 50px;
+}
+.pergunta {
+  font-size: 1.3rem;
+}
+.resposta {
+  margin-left: 5px;
+}
+.btn {
+  width: 150px;
+}
+.correto {
+  color: cadetblue;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.incorreto {
+  color: tomato;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+/* RODAPÉ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  .links {
+    color: #000;
+    text-decoration: none;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.3rem;
+    a:hover {
+      color: #ccc;
+    }
+  }
+  .bi {
+    font-size: 1.8rem;
+    &-github {
+      color: #000;
+    }
+    &-linkedin {
+      color: #000;
+    }
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
