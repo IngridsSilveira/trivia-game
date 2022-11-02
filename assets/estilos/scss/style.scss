@@ -16,17 +16,19 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.9rem;
+  color: #fff;
 }
-
 .bg {
-  height: 87vh;
+  height: 87.6vh;
   width: 100%;
 }
 .section {
   flex-direction: column;
+  padding: 1.5rem 5px 5px 1.5rem;
 }
 .inputs {
   width: 50px;
+  margin: 0 auto;
 }
 .pergunta {
   font-size: 1.3rem;
@@ -36,6 +38,15 @@
 }
 .btn {
   width: 150px;
+}
+.carousel-control-next {
+  position: initial;
+  width: 25%;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: tomato;
+  opacity: none;
 }
 .correto {
   color: cadetblue;
@@ -55,24 +66,24 @@
   align-items: center;
   justify-content: center;
   .links {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-family: "Indie Flower", cursive;
     font-size: 1.3rem;
     a:hover {
-      color: #ccc;
+      color: tomato;
     }
   }
   .bi {
     font-size: 1.8rem;
     &-github {
-      color: #000;
+      color: #fff;
     }
     &-linkedin {
-      color: #000;
+      color: #fff;
     }
     &:hover {
-      color: #ccc;
+      color: tomato;
     }
   }
 }

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangás</title>
+    <title>Trivia Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Indie+Flower&family=Play&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="assets/imagens/Ncrow-Mega-Pack-2-Manga-Studio-FX-4.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imagens/Zerode-Plump-Document-txt.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/estilos/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/estilos/css/style.css">
 </head>
-
 <body>
-    <header class="container-fluid bg-dark">
+    <header class="container-fluid bg-danger">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand me-2" href="#">Trivia Game</a>
+                <a class="navbar-brand title me-2" href="#">Trivia Game</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -36,33 +34,110 @@
             </div>
         </nav>
     </header>
-
-    <main class="container-fluid bg bg-body">
+    <main class="container-fluid bg bg-dark">
         <section class="container section d-flex justify-content-center align-items-center mb-3">
             <h1 class="navbar-brand mt-3 mb-3">Trivia Time</h1>
 
-            <div class="bg-light p-3 section d-flex align-items-center justify-content-center rounded-2">
-                <p class="pergunta text-center">Qual desses é uma cor vista em todos os cantos?</p>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="bg-light section d-flex align-items-center justify-content-center rounded-2">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="pergunta text-center">Qual dessas cores é azul em inglês?</p>
 
-                <div class="inputs">
-                    <div class="d-flex">
-                        <input type="radio" name="radio" class="radio" id="0">
-                        <p class="resposta mb-1">Azul</p>
-                    </div>
-                    <div class="d-flex">
-                        <input type="radio" name="radio" class="radio" id="1">
-                        <p class="resposta mb-1">Amarelo</p>
-                    </div>
-                    <div class="d-flex">
-                        <input type="radio" name="radio" class="radio" id="2">
-                        <p class="resposta mb-1">Verde</p>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-success mb-2 mt-3" id="enviar">Submit</button>
-                <p class="text-center correto" id="confirma"></p>
+                            <div class="inputs">
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="blue">
+                                    <p class="resposta mb-1">Blue</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1">Red</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1">Black</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="pergunta text-center">Qual cor destas cores é verde em inglês?</p>
 
-                <div class="d-flex justify-content-end w-100"> 
-                    <button type="button" class="btn btn-warning" id="next">Next</button>
+                            <div class="inputs">
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1" >Blue</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1"  >Yellow</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="green">
+                                    <p class="resposta mb-1" >Green</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <p class="pergunta text-center"> O que a palavra legend significa em português?</p>
+
+                            <div class="inputs">
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1" >Lenda</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1"  >Legendário</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="legenda">
+                                    <p class="resposta mb-1" >Legenda</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <p class="pergunta text-center"> O que a palavra fabric significa em português?</p>
+
+                            <div class="inputs">
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1" >Fábrica</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="tecido">
+                                    <p class="resposta mb-1"  >Tecido</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="">
+                                    <p class="resposta mb-1" >Fabricação</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <p class="pergunta text-center"> O Marcos Paulo é gay?</p>
+
+                            <div class="inputs">
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="sim">
+                                    <p class="resposta mb-1" >Sim</p>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radio" class="radio" value="nao">
+                                    <p class="resposta mb-1"  >Não</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger mb-2 mt-3" id="enviar">Submit</button>
+                        <p class="text-center correto" id="confirma"></p>
+                    <div class="d-flex justify-content-end w-100">
+                        <button type="button" class="btn btn-warning carousel-control-next"
+                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" id="next">Next</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,5 +159,4 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

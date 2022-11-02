@@ -19,19 +19,22 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.9rem;
+  color: #fff;
 }
 
 .bg {
-  height: 87vh;
+  height: 87.6vh;
   width: 100%;
 }
 
 .section {
   flex-direction: column;
+  padding: 1.5rem 5px 5px 1.5rem;
 }
 
 .inputs {
   width: 50px;
+  margin: 0 auto;
 }
 
 .pergunta {
@@ -44,6 +47,16 @@
 
 .btn {
   width: 150px;
+}
+
+.carousel-control-next {
+  position: initial;
+  width: 25%;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: tomato;
+  opacity: none;
 }
 
 .correto {
@@ -67,25 +80,25 @@
   justify-content: center;
 }
 .footer .links {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-family: "Indie Flower", cursive;
   font-size: 1.3rem;
 }
 .footer .links a:hover {
-  color: #ccc;
+  color: tomato;
 }
 .footer .bi {
   font-size: 1.8rem;
 }
 .footer .bi-github {
-  color: #000;
+  color: #fff;
 }
 .footer .bi-linkedin {
-  color: #000;
+  color: #fff;
 }
 .footer .bi:hover {
-  color: #ccc;
+  color: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */
